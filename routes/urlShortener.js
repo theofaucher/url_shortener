@@ -33,6 +33,14 @@ router.post('/transfer', async (req, res) => {
     const input = req.body.inputUrl;
     if ((validUrl.isUri(input))) {
         
+        let urlExist = await Url.findOne({
+
+            inputUrl: input
+
+        })
+
+        if(urlExist) return res.send(urlExist)
+
         do{
 
             short = Math.random().toString(36).substring(8)
