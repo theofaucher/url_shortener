@@ -1,0 +1,45 @@
+body {
+  background-image: url("../assets/bg.svg") !important;
+  background-size: cover !important;
+}
+
+h1 {
+  color: white !important;
+  padding-top: 350px !important;
+  font-weight: 400 !important;
+  font-family:'Apercu Medium' !important;
+  font-weight:normal !important;
+  font-size:42px !important;
+}
+
+.originalURL {
+  font-weight: normal;
+  color: white !important;
+  font-family: 'Apercu Medium';
+}
+
+.genURL {
+  font-weight: bold;
+  color: white !important;
+}
+
+@font-face {
+  font-family: 'Apercu Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Apercu Regular'), url('../assets/fonts/Apercu_Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Apercu Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Apercu Medium'), url('../assets/fonts/Apercu Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Apercu Mono Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Apercu Mono Regular'), url('../assets/fonts/Apercu Mono.woff') format('woff');
+}
